@@ -1,0 +1,64 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  background:grey;
+  ;
+}
+  
+  /* a {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  } */
+  
+  a:hover {
+    color: #F28123;
+    text-decoration: none;
+  }
+
+  /* logo */
+  .logo-class {
+  float: left;
+  position: absolute;
+width: 80px;
+height: 23px;
+left: 26px;
+top: 16px;
+border-radius: 6px;
+  }
+  /* bg image */
+  .bg-image
+  {
+  position: absolute;
+width: 271px;
+height: 136px;
+align-self: center;
+visibility: visible;
+
+  }
+  .hero-area
+  {
+    width: 100%;
+    padding-top: 15%;
+    padding-left: 35%;
+  }
+
+  .subtitle
+  {
+    margin-top: 150px;
+    margin-left: 500px;
+    padding: 0;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+  }
