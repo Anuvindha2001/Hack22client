@@ -147,6 +147,10 @@ h2 {
 }
 .timeline ul li div div h5 {
     text-align: center;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bolder;
 }
 .discovery {
     margin-right: 10px;
@@ -213,6 +217,7 @@ h2 {
     background: none;
     padding-left: 3rem;
     padding-right: 3rem;
+    font-size: 20px;
 }
 .cont div button {
     align-self: center;
@@ -224,6 +229,7 @@ h2 {
     border: none;
     cursor: pointer;
     margin-left: 28%;
+    margin-top: 0.6rem;
 }
 @media screen and (max-width: 1008px) {
     .cont {
@@ -287,24 +293,30 @@ h2 {
     text-align: center;
     background: none;
     padding: 1rem;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
 }
 .overlay {
     z-index: 9;
     margin: 30px;
 }
-#sponsors1 {
-    margin-top: 7%;
+@media screen and (max-width: 900px) {
+    .testimonials-cont {
+        flex-direction: column;
+    }
 }
-#sponsors1 .row {
-    margin-top: 8%;
+.sponsors-prev {
+    width: 80%;
+    margin: 1rem;
 }
 .slider {
     overflow: hidden;
     position: relative;
     margin: auto;
-    margin-left: 10%;
     margin-bottom: 5%;
-    background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
@@ -339,6 +351,6 @@ h2 {
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(calc(-250px * 15));
+        transform: translateX(calc(-250px * 11));
     }
 }
