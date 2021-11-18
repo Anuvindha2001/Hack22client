@@ -1,0 +1,180 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  background-color: #dad0d0;
+}
+
+body {
+  background-color: #dad0d0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* logo */
+
+.logo-class {
+  float: left;
+  position: absolute;
+  width: 80px;
+  height: 23px;
+  left: 26px;
+  top: 16px;
+  border-radius: 6px;
+}
+
+/* bg image - hack logo*/
+
+.bg-image {
+  width: 395px;
+  height: 300px;
+  z-index: 1;
+  position: absolute;
+  left: 450px;
+  top: 175px;
+  background: transparent;
+}
+
+/* background image - ellipse */
+
+.bg-image2 {
+  width: 500px;
+  height: 500px;
+  left: 400px;
+  top: 75px;
+  position: absolute;
+  z-index: 1;
+  background-color: #dad0d0;
+}
+
+.container {
+  align-content: center;
+}
+
+.subtitle {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: 600px;
+  top: 375px;
+  background: transparent;
+}
+
+/* .navbarbtn
+{
+  float: left;
+  margin-top: 200px;
+  margin-left: 0;
+} */
+
+a.login-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  background-color: rgb(158, 2, 158);
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 1;
+  position: absolute;
+  top: 450px;
+  left: 525px;
+}
+
+a.reg-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid rgb(158, 2, 158);
+  padding: 7px 20px;
+  z-index: 1;
+  position: absolute;
+  top: 450px;
+  background: transparent;
+  left: 680px;
+}
+
+a.login-btn, a.reg-btn {
+  border-radius: 50px;
+}
+
+a.login-btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.login-btn:hover {
+  background-color: rgb(233, 190, 219);
+  color: 6E39B1;
+}
+
+a.reg-btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.reg-btn:hover {
+  background-color: rgb(158, 2, 158);
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+}
+
+.time-counter {
+  position: absolute;
+  margin-bottom: 25px;
+  top: 600px;
+  left: 380px;
+  width: 553px;
+  height: 86px;
+  background-color: #30304D;
+  border-radius: 12px;
+  border: 5px solid #920b70;
+}
+
+.time-counter .time-countdown {
+  position: relative;
+}
+
+.counter-column {
+  align-content: space-between;
+  background-color: #30304D;
+}
+
+.time-countdown .counter-column .inner {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0px 0px 70px;
+  font-size: 13px;
+  line-height: 1em;
+  background-color: #30304D;
+  color: #FFFFFF;
+  /* padding: 8px 20px 14px; */
+  text-transform: capitalize;
+  text-align: center;
+  /* border: 2px solid #3b032d; */
+}
+
+.time-countdown .counter-column .count {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 1.4em;
+  padding: 0px 0px;
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #30304D;
+}
