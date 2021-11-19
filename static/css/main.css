@@ -308,3 +308,29 @@ h2 {
         flex-direction: column;
     }
 }
+.imagee
+{
+    margin-left: 4.5rem;
+    width: 280px;
+    height: 100%;
+    
+}
+.imagee2
+{
+    margin-left: 2.5rem;
+    width: 235px;
+    height: 100%;
+    
+}
+h2{
+    margin: 0 0 88%;
+}
+.qna p{
+    text-align: justify;
+    margin-left: 10%;
+    background: #E2D4F4;
+    font-size: 20px;
+}
+.faq h2{
+    text-align: center;
+}
