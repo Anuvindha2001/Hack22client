@@ -25,28 +25,23 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 12px;
-position: absolute;
-width: 300px;
-height: 600px;
-margin-left: 40%;
-margin-top: 5%;
 align-self: center;
+margin: 0 auto;
+width: 45%;
 }
 .email
 {
   background: rgba(250, 250, 250, 0.6);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 5px;
-margin-top: 15%;
-width: 250px;
-height: 38px;
-margin-left: 3%;
+width:80%;
+height: 20%;
+margin: 15% auto;
 
 font-family: Poppins,sans-serif;
 font-style: normal;
 font-weight: 100;
 font-size: 20px;
-/* line-height: 18px; */
 text-align: center;
 
 color:rgb(170, 159, 159);
@@ -54,12 +49,12 @@ color:rgb(170, 159, 159);
 }
 .line
 {
-  border: 3px solid #5C2BC5;
-  background-color: #5C2BC5;
-  width: 250px;
+  background: rgba(250, 250, 250, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width:80%;
   height: 0px;
-  border-radius: 3px;
-  margin-left: 3%;
+  margin: 20% auto;
 }
 .password
 {
