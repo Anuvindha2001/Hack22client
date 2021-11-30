@@ -116,7 +116,9 @@ h2 {
     padding: 3%;
 }
 .hero {
-    background-image: url('../img/bg.png');
+    background-image: url('../img/bgimage.png');
+    background-image: cover;
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,6 +157,8 @@ h2 {
     text-align: center;
     font-size: 10vw;
     font-family: Graphik, sans-serif;
+    border-style: solid;
+    border-color: cornsilk;
 }
 
 .nav-item {
