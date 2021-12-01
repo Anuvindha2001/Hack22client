@@ -11,7 +11,7 @@ body {
     background-color: #f1f0f6;
 }
 body {
-  background-color: #222;
+    background-color: #222;
 }
 #preloader {
     position: fixed;
@@ -30,12 +30,12 @@ body {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #9370DB;
+    border-top-color: #9370db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
 #loader:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 5px;
     left: 5px;
@@ -43,12 +43,12 @@ body {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #BA55D3;
+    border-top-color: #ba55d3;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
 #loader:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 15px;
     left: 15px;
@@ -56,12 +56,12 @@ body {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #FF00FF;
+    border-top-color: #ff00ff;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 @-webkit-keyframes spin {
-    0%   {
+    0% {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -73,7 +73,7 @@ body {
     }
 }
 @keyframes spin {
-    0%   {
+    0% {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -179,7 +179,6 @@ h2 {
     animation-name: floatright;
     animation-duration: 1s;
 }
-
 
 /* .signup-login,
 .signup-login a {
@@ -510,12 +509,16 @@ h2 {
         width: 50%;
     }
 }
+.sponsors-logo {
+    margin-top: 1rem;
+}
 
 .imagee {
     /* margin-left: 4.5rem; */
     width: 14rem;
     height: 100%;
     display: flex-box;
+    margin-top: 1 rem;
 }
 
 .imagee2 {
