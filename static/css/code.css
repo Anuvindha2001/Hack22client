@@ -1,14 +1,12 @@
-*
-{
+* {
     padding: 0.3%;
 }
-h1
-{
+h1 {
     text-align: center;
 }
 
-body{
-    margin:  5% 10% 0 10%;
-    background-color: #F1F0F6;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+body {
+    margin: 5% 10% 0 10%;
+    background-color: #f1f0f6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
