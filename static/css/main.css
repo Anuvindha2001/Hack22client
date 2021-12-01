@@ -351,7 +351,7 @@ h2 {
     margin-right: 20%;
 }
 
-.cont div {
+.prz {
     margin-top: 1rem;
     width: 15rem;
     height: 18rem;
@@ -360,14 +360,14 @@ h2 {
     box-shadow: 0px 4px 4px 0px #49002240;
 }
 
-.cont div svg {
+.prz svg {
     background: none;
     margin-left: 42%;
     margin-top: 15%;
 }
 
-.cont div h4,
-.cont div p {
+.prz h4,
+.prz p {
     text-align: center;
     margin-top: 1rem;
     background: none;
@@ -376,7 +376,7 @@ h2 {
     font-size: 18px;
 }
 
-.cont div button {
+.prz-btn {
     align-self: center;
     background-color: #4f526a;
     color: white;
@@ -511,7 +511,7 @@ h2 {
 
 .sponsors-logo {
     background-color: #fff;
-    height : 14rem;
+    height: 14rem;
     margin: 8px;
     padding: 20px 10px;
     align-content: center;
@@ -793,17 +793,17 @@ h2 {
     .social-icons li.title {
         display: block;
         margin-right: 0;
-        font-weight: 600;
+        font-weight: 300;
     }
 }
 .modal-overlay {
-    position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 7rem;
     display: grid;
     place-items: center;
-    background-color: #efeeec;
+    background-color: white;
     visibility: hidden;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.04);
 }
 
 .modal-container {
@@ -813,8 +813,8 @@ h2 {
     height: 6rem;
     display: grid;
     place-items: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.04);
+    background-color: white;
+    border-radius: 12px;
 }
 
 .close-btn {
