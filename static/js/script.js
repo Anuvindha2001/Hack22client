@@ -1,8 +1,7 @@
-
 $(window).on('load', function () {
-    $('#preloader').hide();
-  }) 
-  
+    $('#preloader').hide()
+})
+
 $(document).ready(function () {
     $('.customer-logos').slick({
         slidesToShow: 4,
@@ -28,10 +27,15 @@ $(document).ready(function () {
         ]
     })
 })
+const toggles = document.querySelectorAll('.faq-toggle')
+toggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+})
+let items = document.querySelectorAll('.faq')
 
-let items = document.querySelectorAll('.faq');
-
-let length = items.length;
+let length = items.length
 
 items.forEach(
     (item) => {

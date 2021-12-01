@@ -408,7 +408,7 @@ font-weight: 400;
     }
 
     .cont div button {
-        margin-left: 14%;
+        margin-left: 22%;
     }
 }
 
@@ -431,12 +431,16 @@ font-weight: 400;
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
 }
-
+@media (max-width: 1108px) {
+    .testimonials-cont {
+        flex-wrap: wrap;
+    }
+}
 .t-container {
     width: 18rem;
     height: 24rem;
