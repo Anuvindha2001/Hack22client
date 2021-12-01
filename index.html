@@ -14,10 +14,8 @@
     <link rel="icon" type="image/x-icon" href="../static/img/Logo.jpeg">
 </head>
 
-<body>
-    <!-- <div id="preloader">
-        <div id="loader"></div>
-      </div> -->
+<body onLoad="onLoad()">
+   
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="../static/img/Logo.jpeg" width=100 height=40 alt="" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -188,7 +186,13 @@
                 </svg>
                 <h4>First prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button>Know More</button>
+                <button id="myBtn" class="btn">Know More</button>
+                <div class="modal-overlay">
+                <div class="modal-container">
+                  <h3>modal content</h3>
+                  <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
             </div>
             <div>
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -460,6 +464,38 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../static/js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+            const toggles = document.querySelectorAll('.faq-toggle')
+toggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+})
+let items = document.querySelectorAll('.faq')
+
+let length = items.length
+
+items.forEach((item) => {
+    item.addEventListener('click', function () {
+        item.children[1].style.display =
+            item.children[1].style.display === 'block'
+                ? (item.children[1].style.display = 'none')
+                : (item.children[1].style.display = 'block')
+        item.children[0].classList.toggle('to-bottom')
+        item.children[0].classList.toggle('to-top')
+    })
+})
+
+            const modal = document.querySelector(".modal-overlay");
+
+            document.querySelector(".btn").addEventListener("click", () => {
+              modal.classList.add("open-modal");
+            });
+            
+            document.querySelector(".close-btn").addEventListener("click", () => {
+              modal.classList.remove("open-modal");
+            });</script>
+        
 </body>
 
 </html>
