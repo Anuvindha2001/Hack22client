@@ -26,27 +26,17 @@ nav {
     height: 100px;
     padding: 10px 100px;
     box-sizing: border-box;
-<<<<<<< HEAD
-    transition: 0.5s;
+    transition: 0.8s;
     position: sticky;
     top: 0;
+    background: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 1;
 }
 
 nav.black {
     background: rgba(0, 0, 0, 0.8);
-=======
-    transition: .8s;
-    position:sticky;
-    top:0;
-    background:transparent;
-    background-color:transparent;
-    border-color:transparent;
-    z-index: 1;
-  }
-  
-  nav.black{
-    background: rgba(0,0,0,0.8);
->>>>>>> 3676ae0e03f40b191a4961e80c95816886ce0d6b
     height: 80px;
     padding: 10px 50px;
 }
@@ -70,14 +60,8 @@ nav > ul > li {
     font-size: 20px;
     list-style: none;
     display: inline-block;
-<<<<<<< HEAD
 }
 nav > ul > li > a:hover {
-=======
-   
-  }
-  nav > ul > li > a:hover{
->>>>>>> 3676ae0e03f40b191a4961e80c95816886ce0d6b
     background: rgb(93, 66, 116);
     color: #fff;
 }
@@ -272,53 +256,6 @@ h2 {
     margin-bottom: 0.2vw;
     padding: 3%;
 }
-<<<<<<< HEAD
-=======
-.hero {
-    background-image: url('../img/bgimage.png');
-    background-image: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-attachment:fixed;
-    z-index: -1;
-}
-
-nav.navbar{
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
- }
- 
- nav.navbar-inverse {
-     background-color: #222;
-     border-color: #080808;
- }
- 
- nav.navbar.transparent {
-   background-color:rgba(0,0,0,0);
- }
-.hero .container {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    min-height: 600px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h3 {
-    color: white;
-    margin-top: 10%;
-    text-align: center;
-    font-family: Graphik, sans-serif;
-    font-size: 3vw;
-}
->>>>>>> 3676ae0e03f40b191a4961e80c95816886ce0d6b
 
 .nav-link {
     color: #000000;
@@ -803,7 +740,7 @@ h2 {
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: #FAF2FA;
+    color: #faf2fa;
 }
 
 .site-footer hr {
@@ -824,7 +761,7 @@ h2 {
 }
 
 .site-footer a {
-    color: #FAF2FA;
+    color: #faf2fa;
 }
 
 .site-footer a:hover {
@@ -842,7 +779,7 @@ h2 {
 }
 
 .footer-links a {
-    color: #FAF2FA;
+    color: #faf2fa;
 }
 
 .footer-links a:active,
