@@ -281,7 +281,40 @@ h2 {
     animation-name: floatright;
     animation-duration: 1s;
 }
+.hero {
+    background-image: url('../img/bg.png');
+    background-image: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 660px;
+    margin: 0px;
+    padding: 0px;
+}
+.hero .hero-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 600px;
 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container img {
+    width: 600px;
+}
+.hero h3,
+.hero h1 {
+    color: white;
+    text-align: center;
+    font-family: Graphik, sans-serif;
+    font-size: 3vw;
+}
 /* .signup-login,
 .signup-login a {
     background: transparent;
