@@ -714,7 +714,7 @@ h2 {
 
 .faq_question {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0.5rem;
     position: relative;
 }
@@ -764,6 +764,8 @@ h2 {
 }
 
 .faq_answer {
+    font-size: 1rem;
+    font-weight: 200;
     display: none;
     padding: 1rem;
     border-top: 1px solid #bcbcbc;
