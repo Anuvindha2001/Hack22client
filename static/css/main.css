@@ -26,9 +26,13 @@ body {
     height: 100px;
     padding: 10px 100px;
     box-sizing: border-box;
-    transition: .5s;
+    transition: .8s;
     position:sticky;
     top:0;
+    background:transparent;
+    background-color:transparent;
+    border-color:transparent;
+    z-index: 1;
   }
   
   nav.black{
@@ -56,6 +60,7 @@ body {
     font-size: 20px;
     list-style: none;
     display: inline-block;
+   
   }
   nav > ul > li > a:hover{
     background: rgb(93, 66, 116);
@@ -256,13 +261,27 @@ h2 {
 .hero {
     background-image: url('../img/bgimage.png');
     background-image: cover;
-    background-position: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
+    background-attachment:fixed;
+    z-index: -1;
 }
 
+nav.navbar{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+ }
+ 
+ nav.navbar-inverse {
+     background-color: #222;
+     border-color: #080808;
+ }
+ 
+ nav.navbar.transparent {
+   background-color:rgba(0,0,0,0);
+ }
 .hero .container {
     width: 100%;
     margin: 0px;
