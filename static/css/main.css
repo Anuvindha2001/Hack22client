@@ -342,11 +342,6 @@ h2 {
     padding: 0px;
 }
 
-@keyframes floatup {
-    0% {
-        margin-top: 5%;
-    }
-}
 
 .About p {
     padding: 0px;
@@ -384,15 +379,14 @@ h2 {
     height: 20px;
     z-index: 2;
     background: #4c0899;
-}
+} 
 
 .timeline ul li div {
     position: relative;
     bottom: 0;
     width: 400px;
-    padding: 20px;
     box-shadow: 4px 13px 30px 1px rgba(224, 49, 145, 0.2);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     display: flex;
     align-items: center;
 }
@@ -433,52 +427,68 @@ h2 {
     margin-right: 10px;
 }
 
-.timeline ul li:nth-of-type(odd) > div {
-    left: 42px;
+@media screen and (min-width: 900px)
+{
+    .timeline ul li:nth-of-type(odd) > div {
+        left: 42px;
+    }
+    
+    .timeline ul li:nth-of-type(even) > div {
+        left: -442px;
+    }
+    
 }
-
-.timeline ul li:nth-of-type(even) > div {
-    left: -442px;
-}
-
 @media screen and (max-width: 900px) {
+    .timeline ul li{
+        display: flex;
+        align-content:flex-start;
+    }
     .timeline ul li div {
-        width: 250px;
+        
         flex-direction: column;
     }
-
-    .timeline ul li div div {
-        width: 80%;
-        margin: 10px;
+    .timeline ul li
+    {
+        margin-left: 10%;
     }
-
-    .timeline ul li:nth-of-type(even) > div {
-        left: -289px;
+    .timeline ul li div  {
+        margin-left: 45%;
+        padding: 5%;
     }
+    
+
 }
 
 @media screen and (max-width: 600px) {
+    
     .timeline ul li div {
         width: 250px;
         flex-direction: column;
     }
-
-    .timeline ul li div div {
-        width: 80%;
-        margin: 10px;
+    .timeline ul li
+    {
+        margin-left: 10%;
     }
-
+    .timeline ul li div  {
+        margin-left: 75%;
+        padding: 5%;
+    }
+    .timeline ul li div div  {
+        margin-left: 75%;
+    }
     .timeline ul li:nth-of-type(even) > div {
-        left: -289px;
+        animation-play-state: inherit;
     }
 }
+
+
 
 .prize {
     margin: 0px;
     padding: 0px;
 }
 
-.cont {
+.cont{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -547,6 +557,7 @@ h2 {
 @media screen and (max-width: 768px) {
     .cont {
         flex-direction: column;
+        margin: 0 30% 0 30%;
     }
 
     .cont div {
@@ -571,13 +582,15 @@ h2 {
 @media (max-width: 1108px) {
     .testimonials-cont {
         flex-wrap: wrap;
+        margin: 0 30% 0 30%;
+        padding: 0;
     }
 }
-.t-container {
+.testimonials-cont .container {
     width: 18rem;
     height: 24rem;
     position: relative;
-    margin: 30px;
+    /* margin: 30px; */
     background: white;
 }
 
@@ -604,8 +617,9 @@ h2 {
     padding: 1rem;
     font-size: 16px;
     font-style: normal;
+    font-family: Poppins;
     font-weight: 400;
-    text-align: center;
+
 }
 
 .overlay {
