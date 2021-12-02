@@ -772,11 +772,11 @@ h2 {
 }
 
 .site-footer {
-    background-color: #2a0c69;
+    background-color: #735180;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: #737373;
+    color: #FAF2FA;
 }
 
 .site-footer hr {
@@ -797,7 +797,7 @@ h2 {
 }
 
 .site-footer a {
-    color: #737373;
+    color: #FAF2FA;
 }
 
 .site-footer a:hover {
@@ -815,7 +815,7 @@ h2 {
 }
 
 .footer-links a {
-    color: #737373;
+    color: #FAF2FA;
 }
 
 .footer-links a:active,
