@@ -10,6 +10,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f0f6;
 }
+html {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+}
+@media (min-width: 768px) {
+    html {
+        overflow-wrap: break-word;
+    }
+}
 body {
     background-color: #222;
 }
@@ -324,7 +333,9 @@ h2 {
         animation-play-state: inherit;
     }
 }
-
+.testimonials-cont .container {
+    margin-top: 1rem;
+}
 .prize {
     margin: 0px;
     padding: 0px;
@@ -493,16 +504,23 @@ h2 {
     flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+    .spon-prev-cont {
+        margin-left: 2.4%;
+    }
     .col-sm-6 {
         width: 50%;
     }
 }
-
+@media (max-width: 600px) {
+    .spon-prev-cont {
+        margin-left: 14%;
+    }
+}
 .sponsors-logo {
     background-color: #fff;
     height: 14rem;
-    margin: 8px;
+    margin: 2%;
     padding: 20px 10px;
     align-content: center;
     text-align: center;
@@ -521,12 +539,12 @@ h2 {
     /* margin-left: 4.5rem; */
     width: 14rem;
     height: 100%;
-    display: flex-box;
-    margin-top: 1 rem;
+    margin: 0 auto;
+    display: flex;
 }
 
 .imagee2 {
-    margin-left: 2.5rem;
+    margin-left: 0 auto;
     width: 14rem;
     height: 100%;
 }
@@ -534,7 +552,19 @@ h2 {
 h2 {
     margin: 0 0 88%;
 }
-
+@media (max-width: 1200px) {
+    .imagee,
+    .imagee2 {
+        width: 11rem;
+    }
+}
+@media (max-width: 600px) {
+    .imagee,
+    .imagee2 {
+        width: 10rem;
+        padding: 1rem;
+    }
+}
 *,
 *::before,
 *::after {
