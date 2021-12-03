@@ -195,6 +195,10 @@ h2 {
     padding: 0px;
 }
 
+.About {
+    width: auto;
+    background-color: #1F0827;
+}
 
 .About p {
     padding: 0px;
@@ -211,6 +215,7 @@ h2 {
 
 .vid {
     box-shadow: hotpink;
+    padding: 10px;
 }
 
 .timeline ul li {
