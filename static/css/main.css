@@ -195,11 +195,6 @@ h2 {
     padding: 0px;
 }
 
-.About {
-    width: auto;
-    background-color: #1F0827;
-}
-
 .About p {
     padding: 0px;
     margin: 0px;
@@ -215,7 +210,6 @@ h2 {
 
 .vid {
     box-shadow: hotpink;
-    padding: 10px;
 }
 
 .timeline ul li {
@@ -237,7 +231,7 @@ h2 {
     height: 20px;
     z-index: 2;
     background: #4c0899;
-} 
+}
 
 .timeline ul li div {
     position: relative;
@@ -285,53 +279,45 @@ h2 {
     margin-right: 10px;
 }
 
-@media screen and (min-width: 900px)
-{
+@media screen and (min-width: 900px) {
     .timeline ul li:nth-of-type(odd) > div {
         left: 42px;
     }
-    
+
     .timeline ul li:nth-of-type(even) > div {
         left: -442px;
     }
-    
 }
 @media screen and (max-width: 900px) {
-    .timeline ul li{
+    .timeline ul li {
         display: flex;
-        align-content:flex-start;
+        align-content: flex-start;
     }
     .timeline ul li div {
-        
         flex-direction: column;
     }
-    .timeline ul li
-    {
+    .timeline ul li {
         margin-left: 10%;
     }
-    .timeline ul li div  {
+    .timeline ul li div {
         margin-left: 45%;
         padding: 5%;
     }
-    
-
 }
 
 @media screen and (max-width: 600px) {
-    
     .timeline ul li div {
         width: 250px;
         flex-direction: column;
     }
-    .timeline ul li
-    {
+    .timeline ul li {
         margin-left: 10%;
     }
-    .timeline ul li div  {
+    .timeline ul li div {
         margin-left: 75%;
         padding: 5%;
     }
-    .timeline ul li div div  {
+    .timeline ul li div div {
         margin-left: 75%;
     }
     .timeline ul li:nth-of-type(even) > div {
@@ -339,14 +325,12 @@ h2 {
     }
 }
 
-
-
 .prize {
     margin: 0px;
     padding: 0px;
 }
 
-.cont{
+.cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -477,7 +461,6 @@ h2 {
     font-style: normal;
     font-family: Poppins;
     font-weight: 400;
-
 }
 
 .overlay {
