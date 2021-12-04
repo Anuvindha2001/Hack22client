@@ -23,39 +23,27 @@
     
 <body>
         
+    <header>
+        <section>
+        <a href="#" id="logo" target="_blank"><img class="hero-img" width="120" src="./static/img/Logo.jpeg" /></a>
         
-
-<div class="container">
-    <nav  class="navbar navbar-inverse bg-transparent ">
-        <a class="navbar-brand" href="#"><img src="../static/img/Logo.jpeg" width=150 height=40 alt="" srcset=""></a>
-
+        <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+        <input type="checkbox" id="toggle-1">
+        
+        <nav>
         <ul>
-            <li data-aos=fade-right data-aos-anchor-placement=top-bottom
-            data-aos-duration=1000><a href="#">Home</a></li>
-            <li  data-aos=fade-right data-aos-anchor-placement=top-bottom
-            data-aos-duration=1000 data-aos-duration="1000"><a href="#">About</a></li>
-            <li  data-aos=fade-right data-aos-anchor-placement=top-bottom
-            data-aos-duration=1000 data-aos-duration="1000"><a href="#">Sponsors</a></li>
-            <li  data-aos=fade-right data-aos-anchor-placement=top-bottom
-            data-aos-duration=1000 data-aos-duration="1000"><a href="./templates/codeofconduct.html">Code of
-                    Conduct</a></li>
+        <li><a href="#logo">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="./templates/codeofconduct.html">Code of conduct</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
+        </nav>
+        </header>
 
-        </ul>
-        </div>
-        </div>
-    </nav>
-</div>
-    <script >
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('nav').addClass('transparent');
-            } else {
-                $('nav').removeClass('transparent');
-            }
-        });
-
-    </script>
+   
+        
+        </section>
     <section class="hero" id="home" style="background-color:#F1F0F6;">
         <!-- <img class="hero-img" src="../static/img/2022.png" /> -->
         <div class= "hero-container">
@@ -91,7 +79,7 @@
                 </div>
                 <div class="col col-lg-6 col-md-12 col-sm-12">
                     <video data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
-                        data-aos-duration="500" class="vid" src="./static/img/hack_video.mp4" width="500" height="600"
+                        data-aos-duration="500" class="vid" src="../static/img/hack_video.mp4" width="500" height="600"
                         type="video/mp4" autoplay muted loop></video>
                 </div>
             </div>
@@ -100,7 +88,7 @@
 
     </section>
     <br><br>
-    <section class="timeline" style="background-color:#F1F0F6;">
+    <section class="timeline" id="timeline" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"><i class=" fa fa-calendar-check-o"></i>| EVENT TIMELINE
         </h2>
         <hr style="margin-inline: 10%;">
@@ -172,7 +160,7 @@
 
         </ul>
     </section>
-    <section class="prize" style="background-color:#F1F0F6;">
+    <section class="prize" id="prize" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"><svg width="40" height="40" viewBox="0 0 35 50"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -190,7 +178,7 @@
                 </svg>
                 <h4>First prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
             <div data-aos="fade-up" class="prz">
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +188,7 @@
                 </svg>
                 <h4>Second prize</h4>
                 <p>Total prize of worth INR 15,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
             <div data-aos="fade-up" class="prz">
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,12 +198,41 @@
                 </svg>
                 <h4>Third prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal">
+  
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content animation-1" >
+            <!-- Modal header -->
+          <header class="modal-header">
+            <p class="modal-header-title">
+              Prize Details
+            </p>
+            <button id="close" class="modal-header-icon">
+              X
+            </button>
+          </header>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <ul>
+                <li>Figma swag Boxes</li>
+                <li>Wolfarm|One Personal Edition Wolfarm|Alpha Pro Subscription</li>
+                <li>Digital Ocean Credits</li>
+            </ul>
+          </div>
+         
+          <!-- Modal footer -->
+          <footer class="modal-footer">
+            
+          </footer>
+        </div>
+        
+      </div>
     <br><br>
-    <section class="testimonials" style="background-color:#F1F0F6;">
+    <section class="testimonials" id="testimony" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"> <svg class="svg-icon" width="40" height="60"
                 viewBox="0 0 20 20">
                 <path
@@ -224,7 +241,7 @@
             </svg>| TESTIMONIALS</h2>
         <hr style="margin-inline: 10%;">
         <div class="testimonials-cont">
-            <div class="t-container">
+            <div class="container">
                 <div data-aos=fade-up data-aos-anchor-placement=top-bottom data-aos-duration=1000 class="test-content">
                     <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -242,7 +259,7 @@
                 </div>
                 <div class="overlay"></div>
             </div>
-            <div class="t-container">
+            <div class="container">
                 <div data-aos=fade-up data-aos-anchor-placement=top-bottom data-aos-duration=1000 class="test-content">
                     <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -260,7 +277,7 @@
                     </p>
                 </div>
             </div>
-            <div class="t-container">
+            <div class="container">
                 <div data-aos=fade-up data-aos-anchor-placement=top-bottom data-aos-duration=1000 class="test-content">
                     <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -325,7 +342,7 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="sponsor-heading">
-                    <h2 data-aos="zoom-in-up" style="text-align: center;"><i class="fa fa-handshake"></i> | PREVIOUS
+                    <h2 data-aos="zoom-in-up" style="text-align: center;"><img src="./static/img/sponsor-icon.png" alt="" srcset=""> | PREVIOUS
                         SPONSORS</h2>
                 </div>
 
@@ -360,7 +377,8 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
-                    <div class="sponsors-logo "><a href="#" target="_blank"><img class="imagee"
+                    <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
+                    data-aos-duration=1000><a href="#" target="_blank"><img class="imagee"
                                 src="../static/img/do.png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
@@ -421,14 +439,14 @@
     </section>
 
     <br>
-    <section class="faq_">
+    <section class="faq_" id="faq">
 
         <h2 data-aos="zoom-in-up" style="text-align: center;"> FAQ <i class="fa fa-question-circle-o"></i></h2>
         <hr style="margin-inline: 10%;">
         <div class="container">
             <div class="faqs">
                 <section class="faq">
-                    <h2 class="faq_question to-bottom">What is the goal of the hackathon?</h2>
+                    <h2 class="faq_question to-bottom">What is the goal of the hackathon?  </h2>
                     <div class="faq_answer">We aim to promote development oriented policies that
                         support productive activities, decent job creation ,
                         entrepreneurship, creativity,innovation etc. which
@@ -481,7 +499,7 @@
             </div>
         </div>
         <!-- Site footer -->
-        <footer class="site-footer">
+        <footer class="site-footer" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
@@ -492,26 +510,15 @@
                             met within day-to-day lives. </p>
                     </div>
 
-                    <!-- <div class="col-xs-6 col-md-3">
-                        <h6>Categories</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">C</a></li>
-                            <li><a href="#">UI Design</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">Java</a></li>
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">Templates</a></li>
-                        </ul>
-                    </div> -->
 
                     <div class="col-xs-6 col-md-3" style="margin-left: 15rem;">
                         <h6>Quick Links</h6>
                         <ul class="footer-links">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Contribute</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="../templates/codeofconduct.html">Code of conduct</a></li>
+                            <!-- <li><a href="#">Contribute</a></li>
+                            <li><a href="#">Privacy Policy</a></li> -->
+                            <li><a href="./templates/codeofconduct.html">Code of conduct</a></li>
                         </ul>
                     </div>
                 </div>
@@ -531,11 +538,11 @@
                                         class="fa fa-facebook"></i></a></li>
                             <li><a class="twitter" href="https://twitter.com/MaceSb?s=08"><i
                                         class="fa fa-twitter"></i></a></li>
-                            <li><a class="instagra," href="https://www.instagram.com/ieee_mace_sb/"><i
+                            <li><a class="instagram" href="https://www.instagram.com/ieee_mace_sb/"><i
                                         class="fa fa-instagram"></i></a></li>
                             <li><a class="linkedin" href="https://in.linkedin.com/company/ieeemace"><i
                                         class="fa fa-linkedin"></i></a></li>
-                            <li><a class="linkedin" href="https://www.youtube.com/channel/UC_mRMYAOg4__QRBhZKJMLDQ"><i
+                            <li><a class="youtube" href="https://www.youtube.com/channel/UC_mRMYAOg4__QRBhZKJMLDQ"><i
                                         class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
@@ -559,15 +566,30 @@
 
         </script>
         <script>
-            const modal = document.querySelector(".modal-overlay");
+            var modal = document.getElementById("myModal");
 
-            document.querySelector(".btn").addEventListener("click", () => {
-                modal.classList.add("open-modal");
-            });
+// Get the button that opens the modal
+var btn = document.getElementById("open-modal");
 
-            document.querySelector(".close-btn").addEventListener("click", () => {
-                modal.classList.remove("open-modal");
-            });
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../static/js/script.js"></script>
