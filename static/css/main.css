@@ -638,6 +638,10 @@ h2 {
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 600px) {
+    .sponsors-logo {margin-left: 5rem;}
+  }
+
 @media (min-width: 768px) {
     .col-sm-6 {
         width: 50%;
@@ -968,3 +972,5 @@ h2 {
     visibility: visible;
     z-index: 10;
 }
+
+
