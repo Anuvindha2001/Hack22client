@@ -89,7 +89,7 @@
 
     </section>
     <br><br>
-    <section class="timeline" style="background-color:#F1F0F6;">
+    <section class="timeline" id="timeline" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"><i class=" fa fa-calendar-check-o"></i>| EVENT TIMELINE
         </h2>
         <hr style="margin-inline: 10%;">
@@ -161,7 +161,7 @@
 
         </ul>
     </section>
-    <section class="prize" style="background-color:#F1F0F6;">
+    <section class="prize" id="prize" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"><svg width="40" height="40" viewBox="0 0 35 50"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -179,7 +179,7 @@
                 </svg>
                 <h4>First prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
             <div data-aos="fade-up" class="prz">
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +189,7 @@
                 </svg>
                 <h4>Second prize</h4>
                 <p>Total prize of worth INR 15,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
             <div data-aos="fade-up" class="prz">
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -199,12 +199,41 @@
                 </svg>
                 <h4>Third prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button class="prz-btn">Know More</button>
+                <button class="prz-btn" id="open-modal">Know More</button>
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal">
+  
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content animation-1" >
+            <!-- Modal header -->
+          <header class="modal-header">
+            <p class="modal-header-title">
+              Prize Details
+            </p>
+            <button id="close" class="modal-header-icon">
+              X
+            </button>
+          </header>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <ul>
+                <li>Figma swag Boxes</li>
+                <li>Wolfarm|One Personal Edition Wolfarm|Alpha Pro Subscription</li>
+                <li>Digital Ocean Credits</li>
+            </ul>
+          </div>
+         
+          <!-- Modal footer -->
+          <footer class="modal-footer">
+            
+          </footer>
+        </div>
+        
+      </div>
     <br><br>
-    <section class="testimonials" style="background-color:#F1F0F6;">
+    <section class="testimonials" id="testimony" style="background-color:#F1F0F6;">
         <h2 data-aos="zoom-in-up" style="text-align: center;"> <svg class="svg-icon" width="40" height="60"
                 viewBox="0 0 20 20">
                 <path
@@ -411,7 +440,7 @@
     </section>
 
     <br>
-    <section class="faq_">
+    <section class="faq_" id="faq">
 
         <h2 data-aos="zoom-in-up" style="text-align: center;"> FAQ <i class="fa fa-question-circle-o"></i></h2>
         <hr style="margin-inline: 10%;">
@@ -471,7 +500,7 @@
             </div>
         </div>
         <!-- Site footer -->
-        <footer class="site-footer">
+        <footer class="site-footer" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
@@ -549,15 +578,30 @@
 
         </script>
         <script>
-            const modal = document.querySelector(".modal-overlay");
+            var modal = document.getElementById("myModal");
 
-            document.querySelector(".btn").addEventListener("click", () => {
-                modal.classList.add("open-modal");
-            });
+// Get the button that opens the modal
+var btn = document.getElementById("open-modal");
 
-            document.querySelector(".close-btn").addEventListener("click", () => {
-                modal.classList.remove("open-modal");
-            });
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../static/js/script.js"></script>
