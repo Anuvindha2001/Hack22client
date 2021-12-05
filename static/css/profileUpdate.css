@@ -1,0 +1,21 @@
+body {
+    background-color: #f1f0f6;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    border-radius: 6px;
+    width: 90px;
+    height: 34px;
+}
+nav {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer {
+    text-align: center;
+    margin-left: 46%;
+}
