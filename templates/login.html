@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Hack22</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/login.css">
-</head>
-<body>
-  <!-- navbar begins -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="../static/img/Logo.jpeg" alt="logo" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- navbar ends -->
-      <!-- login box -->
-      <div class="container">
-        <div class="email">email</div>
-        <div class="line"></div>
-        <div class="password">password</div>
-        <div class="login-btn">Login</div>
-        <div class="signup-btn">Sign Up</div>
-        <div class="lines"><div class="line1"></div>   or   <div class="line2"></div></div>
-        <div class="forgot-pswd">forgot password?</div>
-      </div>
-      <!-- Footer -->
-      <footer class= "fixed-bottom">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        
-          <div class="footer">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <div class="footer-content"><a class="nav-link" href="#">Having Issues?</a></div>
-                <div class="footer-content"><a class="nav-link" href="#">Contact us</a></div>
-                <!-- <span class="sr-only">(current)</span> -->
-              </li>
-            </ul>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | Hack22</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="../static/css/login.css" />
+    </head>
+    <body>
+        <!-- navbar begins -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#"
+                ><img src="../static/img/Logo.jpeg" alt="logo" class="logo"
+            /></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"
+                            >Dashboard <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
         </nav>
-      </footer>
-      <!-- Footer ends -->
-</body>
+        <!-- navbar ends -->
+        <!-- login box -->
+        <div class="login-box">
+            <input type="text" placeholder="email" id="email"></input>
+            <br/>
+            <input type="text" placeholder="password" id="psw"></input>
+            <br/>
+            <div class="btn-group">
+                <button class="login">Login</button>
+                <br/>
+                <button class="reg">Register</button>
+
+            </div>
+            <br/>
+            <div class="strike">
+                <span>or</span>
+            </div>
+            <div class="sm-btn">
+                <button ><img src="../static/img/Group.svg" /></button>
+                <button ><img src="../static/img/Googleicon.svg" /></button>
+            </div>
+            <hr></hr>
+            <div class="login-bottom">
+                <a href="#">Forgot password ?</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="fixed-bottom">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="footer">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="footer-content">
+                                <a class="nav-link" href="#">Having Issues?</a>
+                            </div>
+                            <div class="footer-content">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </div>
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+        <!-- Footer ends -->
+    </body>
+    <script>
+         
+    </script>
 </html>
