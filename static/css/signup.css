@@ -1,0 +1,137 @@
+body {
+    background-color: #f1f0f6;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    border-radius: 6px;
+    width: 90px;
+    height: 34px;
+}
+nav {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer {
+    text-align: center;
+    margin-left: 46%;
+}
+.login-box {
+    border-radius: 12px;
+    padding-top: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 34%;
+    background-color: white;
+    width: 36%;
+}
+input:hover {
+    background-color: #fafafa;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.login-box input {
+    padding: 5%;
+    border-radius: 5px;
+
+    background-color: #f1f0f6;
+    border: none;
+    height: 36px;
+    width: 275px;
+    outline: none;
+    margin: 4%;
+}
+.sm-btn button {
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.sm-btn {
+    margin-top: 1rem;
+}
+.login-bottom {
+    border-radius: 0px 0px 12px 12px;
+    height: 4rem;
+    padding: 0px;
+    padding: 5%;
+    background-color: #f1f0f6;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: -16px;
+}
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+button {
+    cursor: pointer;
+}
+.btn-group button {
+    width: 160px;
+    background: #6e39b1;
+    color: white;
+    padding: 0.5em;
+    margin: auto auto;
+    border: none;
+    border-radius: 5px;
+}
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: grey;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.line1,
+.line2 {
+    border: 3px solid rgba(79, 82, 106, 0.3);
+    width: 108px;
+    height: 0px;
+    margin-top: 9%;
+    background-color: rgba(79, 82, 106, 0.3);
+}
+.line1 {
+    margin-left: 5%;
+}
+.lines {
+    margin-top: 10%;
+}
+.forgot-pswd {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    margin-left: 0%;
+    margin-top: 15%;
+    background: #f1f0f7;
+    border-radius: 0px 0px 12px 12px;
+    text-align: center;
+}
