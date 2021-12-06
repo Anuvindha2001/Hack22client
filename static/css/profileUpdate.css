@@ -3,12 +3,69 @@ body {
     padding-bottom: 50px;
     text-align: center;
 }
+.profile-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: white;
+}
 
+input,
+select {
+    align-self: left;
+    width: 380px;
+    height: 42px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+h4 {
+    text-align: left;
+    padding: 20px;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.name,
+.contact,
+.info-x {
+    margin: 1rem;
+}
+@media (min-width: 768px) {
+    .inst select {
+        margin: 2rem;
+        width: 500px;
+        align-self: flex-start;
+    }
+    .inst {
+        display: flex;
+    }
+    .name,
+    .contact,
+    .info-x {
+        display: flex;
+        flex-direction: row;
+    }
+}
 .logo {
     position: relative;
     border-radius: 6px;
     width: 90px;
     height: 34px;
+}
+@media (min-width: 768px) {
+    .profile-box {
+        margin-top: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .profile-box {
+        margin-top: 16%;
+    }
 }
 nav {
     position: absolute;
