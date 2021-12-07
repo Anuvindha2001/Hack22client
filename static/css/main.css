@@ -222,7 +222,7 @@ label {
     font-weight: normal;
     font-size: 1.5rem;
     text-align:center;
-    color: #000000;
+    color: #ffffff;
     width:fit-content;
     max-height: min-content;
     
@@ -236,7 +236,8 @@ label {
 /* hero section */
 .hero{
     width: 100%;
-    background-image: url('../img/bg.png');
+    background-image: url('../img/bgglobe.jpg');
+    background-color: #f1f0f6;
     background-image: cover;
     background-position: cover;
     background-repeat: no-repeat;
