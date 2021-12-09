@@ -1,41 +1,113 @@
 body {
     background-color: #f1f0f6;
-    padding-bottom: 50px;
-    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
 }
-.profile-box {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 auto;
+.button
+{
+    background-color: #7e34a3;
+border: 1px solid #756969;
+box-sizing: border-box;
+border-radius: 3px;
+width: 7rem;
+margin-left: 75%;
+}
+.basic
+{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    margin: 0;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
 }
-
 input,
 select {
-    align-self: left;
-    width: 380px;
-    height: 42px;
+    width: 100%;
+    height: 2.5rem;
     outline: none;
     border: 1px solid #bbbbbb;
     box-sizing: border-box;
     border-radius: 5px;
-    margin-left: 5%;
 }
+
 h4 {
     text-align: left;
     padding: 20px;
 }
+
 .head {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.name,
-.contact,
-.info-x {
-    margin: 1rem;
+
+.logo {
+    float: left;
+    position: relative;
+    border-radius: 6px;
+    width: 5.6rem;
+    height: 2.1rem;
 }
-@media (min-width: 768px) {
+
+.name,
+.email,
+.dob,
+.gender .phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.name input, .last-name input {
+    text-align: center;
+}
+
+.last-name p {
+    visibility: hidden;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    /* iOS fix */
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    height: 1.125rem;
+    width: 1.125rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.gender .radio-btns
+{
+    display:inline-block;
+    justify-content: space-between;
+}
+.inst input{
+    background: rgba(241, 240, 247, 0.7);
+}
+.edu-div
+{
+    display: inline-block;
+    width:50%;
+}
+.edu
+{
+    display: flex;
+    justify-content: space-between;
+}
+/* @media (min-width: 768px) {
     .inst select {
         margin: 2rem;
         width: 500px;
@@ -45,8 +117,10 @@ h4 {
         display: flex;
     }
     .name,
-    .contact,
-    .info-x {
+    .email,
+    .dob,
+    .gender
+    .phone {
         display: flex;
         flex-direction: row;
     }
@@ -66,12 +140,13 @@ h4 {
     .profile-box {
         margin-top: 16%;
     }
-}
+} */
 nav {
     position: absolute;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .footer {
     text-align: center;
     margin-left: 46%;
