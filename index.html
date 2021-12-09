@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main style -->
     <link rel="stylesheet" href="../static/css/main.css" />
     <title>hack|2022</title>
@@ -56,11 +57,13 @@
 
         
     <div class= "hero-container">
+        
         <div class="svg-wrapper">
             <svg height="120" width="640" xmlns="http://www.w3.org/2000/svg">
               <rect class="shape" height="120" width="640" />
             </svg>
-             <div class="text">.hack( ); <br/><br> <h3>Registration Starts Soon..!!</h3></div>
+             <div class="text">.hack( ); <br/><br> </div>
+            
           </div>
           
     </div>
@@ -205,7 +208,7 @@
                 </svg>
                 <h4>Second prize</h4>
                 <p>Total prize of worth INR 15,000</p>
-                <button class="prz-btn" id="open-modal">Know More</button>
+                <button class="prz-btn" id="open-modal2">Know More</button>
             </div>
             <div data-aos="fade-up" class="prz">
                 <svg width="40" height="55" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +218,7 @@
                 </svg>
                 <h4>Third prize</h4>
                 <p>Total prize of worth INR 20,000</p>
-                <button class="prz-btn" id="open-modal">Know More</button>
+                <button class="prz-btn" id="open-modal3">Know More</button>
             </div>
         </div>
     </section>
@@ -378,14 +381,14 @@
 
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
-                    <div class="sponsors-logos " data-aos=fade-up data-aos-anchor-placement=top-bottom
+                    <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
                         data-aos-duration=1000><a href="https://www.wolfram.com/" target="_blank"><img class="imagee"
-                                src="../static/img/wolfram.02a9e7b.png" loading="lazy"></a></div>
+                                src="../static/img/wolfram (1).png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
-                    <div class="sponsors-logos " data-aos=fade-up data-aos-anchor-placement=top-bottom
+                    <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
                         data-aos-duration=1000><a href="https://www.sketch.com/" target="_blank"><img class="imagee"
-                                src="../static/img/sketch.82ef58e.png" loading="lazy"></a></div>
+                                src="../static/img/sketch2.png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
                     <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
@@ -394,19 +397,19 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
-                    <div class="sponsors-logos " data-aos=fade-up data-aos-anchor-placement=top-bottom
+                    <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
                         data-aos-duration=1000><a href="#" target="_blank"><img class="imagee"
-                                src="../static/img/digitalocean.8f1db06.svg" loading="lazy"></a></div>
+                                src="../static/img/dos.png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
                     <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
                         data-aos-duration=1000><a href="https://www.agappe.com/in/" target="_blank"><img class="imagee"
-                                src="../static/img/agappe1.png" loading="lazy"></a></div>
+                                src="../static/img/agappe.png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
-                    <div class="sponsors-logos " data-aos=fade-up data-aos-anchor-placement=top-bottom
+                    <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
                         data-aos-duration=1000><a href="https://www.devfolio.co/" target="_blank"><img class="imagee"
-                                src="../static/img/Devfolio_Logo-Colored.png" loading="lazy"></a></div>
+                                src="../static/img/devfolio (1).png" loading="lazy"></a></div>
                 </div>
                 <div class="col-sm-6 col-xs-6 col-lg-3 col-md-4">
                     <div class="sponsors-logo " data-aos=fade-up data-aos-anchor-placement=top-bottom
@@ -596,7 +599,8 @@
 
             // Get the button that opens the modal
             var btn = document.getElementById("open-modal");
-
+            var btn2= document.getElementById("open-modal2");
+            var btn3= document.getElementById("open-modal3");
             // Get the <span> element that closes the modal
             var span = document.getElementById("close");
 
@@ -604,7 +608,12 @@
             btn.onclick = function () {
                 modal.style.display = "block";
             }
-
+            btn2.onclick = function () {
+                modal.style.display = "block";
+            }
+            btn3.onclick = function () {
+                modal.style.display = "block";
+            }
             // When the user clicks on <span> (x), close the modal
             span.onclick = function () {
                 modal.style.display = "none";
