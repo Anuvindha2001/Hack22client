@@ -950,9 +950,7 @@ section {
     max-width: 60rem;
     margin: 3rem auto 0;
 }
-.faqs {
-    margin-left: -20rem;
-}
+
 .faq {
     box-shadow: 0 2px 1px rgba(35, 35, 35, 0.3);
     transition: all 0.3s ease;
