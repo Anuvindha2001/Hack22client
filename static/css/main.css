@@ -114,7 +114,7 @@ h2{
 header {
     width: 100%;
     display: table;
-    position: sticky;
+    /* position: sticky; */
     /* position: fixed; */
     top: 0;
     background: white;
@@ -193,7 +193,7 @@ nav ul li a:hover {
     text-align: center;
     color: #542bab;
     font-family: 'Roboto Condensed';
-    font-size: 70px;
+    font-size: 90px;
     letter-spacing: 8px;
     line-height: 32px;
     position: relative;
@@ -222,7 +222,7 @@ nav ul li a:hover {
 
 .svg-wrapper:hover .shape {
     -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
+    animation: 1s draw linear forwards ;
 }
 
 #hex {
@@ -264,7 +264,7 @@ label {
 }
 
 .About {
-    background: #6d50bd;
+    background: #8671c0;
 }
 .About .container {
     width: 90%;
@@ -306,7 +306,7 @@ label {
 /* hero section */
 .hero {
     width: 100%;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/aestheticbg.jpg');
     background-color: #f1f0f6;
     background-image: cover;
     background-position: cover;
@@ -317,6 +317,7 @@ label {
     /* height: 660px; */
     margin: 0px;
     padding: 0px;
+    height: 87vh;
 }
 
 .hero .hero-container {
@@ -344,14 +345,44 @@ label {
     }
 }
 
-.hero h3,
-.hero h1 {
+.hero h3 {
     color: #542bab;
-    text-align: center;
-    font-family: monospace;
-    font-size: 2rem;
-    margin-top: 8rem;
-}
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 7rem;
+    border-right: 2px solid #7e34a3;
+    overflow: hidden;
+    animation: moveRight 2500ms steps(32), borderBlink 600ms infinite;
+    white-space: nowrap;
+  }
+  
+  .cursor {
+    height: 100%;
+    width: 2px;
+    color: #7e34a3;
+  }
+  
+  @keyframes moveRight {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width:90%;
+    }
+  }
+  
+  @keyframes borderBlink {
+    0%,
+    100% {
+      border-right-color: transparent;
+    }
+  
+    50% {
+      border-right-color: #542bab;
+    }
+  }
 
 /* .signup-login,
 .signup-login a {
@@ -618,7 +649,7 @@ timeline */
     padding: 0px;
     padding-bottom: 5%;
     padding-top: 5%;
-    background: #6d50bd;
+    background: #8671c0;
 }
 
 .cont {
@@ -959,7 +990,7 @@ timeline */
 }
 /* footer section */
 .site-footer {
-    background-color: #021130;
+    background-color: #3a2947;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
