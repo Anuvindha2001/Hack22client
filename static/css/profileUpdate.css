@@ -1,19 +1,36 @@
 body {
     background-color: #f1f0f6;
-    padding-bottom: 50px;
     font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+.button
+{
+    background-color: #7e34a3;
+border: 1px solid #756969;
+box-sizing: border-box;
+border-radius: 3px;
+width: 7rem;
+margin-left: 75%;
+}
+.basic
+{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+}
 .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 auto;
+    width: 100%;
+    margin: 0;
     background-color: white;
     display: flex;
     justify-content: center;
     padding: 5%;
 }
-
 input,
 select {
     width: 100%;
@@ -71,9 +88,23 @@ input[type="radio"] {
     width: 1.125rem;
     border-radius: 50%;
     cursor: pointer;
-}.gender .radio-btns
+}
+.gender .radio-btns
 {
     display:inline-block;
+    justify-content: space-between;
+}
+.inst input{
+    background: rgba(241, 240, 247, 0.7);
+}
+.edu-div
+{
+    display: inline-block;
+    width:50%;
+}
+.edu
+{
+    display: flex;
     justify-content: space-between;
 }
 /* @media (min-width: 768px) {
