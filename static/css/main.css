@@ -22,6 +22,7 @@ hr{
 }
 h2{
     text-align: center;
+    font-weight: bold;
 }
 @media (min-width: 768px) {
     html {
@@ -130,12 +131,14 @@ header {
     font-size: 24px;
     font-weight: 600;
     padding: 20px 0px;
+   
 }
 
 .logo-img {
-    /* padding: 0px 10px; */
+    padding-left: 5%;
     border: 2px double white;
     width: 120px;
+    border-radius: 5px;
 }
 /* navbar section */
 .navsection {
@@ -766,6 +769,12 @@ timeline */
         min-width: 18rem;
     }
 }
+.testimonials-cont .container:hover
+{
+    cursor: pointer;
+  box-shadow: 0px 12px 30px 0px rgba(204, 235, 203, 0.2);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
 .test-content {
     width: 90%;
     height: 90%;
@@ -784,7 +793,7 @@ timeline */
 }
 
 .test-content p {
-    color: rgb(0, 0, 0);
+    color: rgb(248, 224, 255);
     text-align: center;
     background: none;
     padding: 1rem;
@@ -819,7 +828,9 @@ timeline */
 .Sponsors {
     margin: 0 auto;
 }
-
+.spon-prev-cont hr{
+    color: 2px solid #542bab;
+}
 .spon-cont {
     display: flex;
     flex-wrap: wrap;
@@ -846,9 +857,13 @@ timeline */
     }
 }
 
+.sponsor-logos{
+   background-color: #fff;
+   width: 14rem;
+   height: 14rem;
+}
 .sponsors-logo {
-    background-color: #fff;
-    height: 14rem;
+
     margin: 2%;
     padding: 20px 10px;
     align-content: center;
@@ -933,6 +948,7 @@ timeline */
     font-weight: 400;
     padding: 0.5rem;
     position: relative;
+    color: rgb(255, 255, 255);
 }
 
 .faq .to-bottom::before {
