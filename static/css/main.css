@@ -10,7 +10,8 @@ body {
     background-color: #f1f0f6;
 }
 body {
-    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 html {
     overflow-x: hidden;
@@ -23,10 +24,6 @@ hr {
 h2 {
     text-align: center;
     font-weight: bold;
-}
-section {
-    overflow: hidden;
-    min-width: 100vw;
 }
 @media (min-width: 768px) {
     html {
@@ -934,6 +931,7 @@ timeline */
 }
 section {
     min-width: 100vw;
+    overflow: hidden;
 }
 *,
 *::before,
@@ -946,11 +944,15 @@ section {
 
 /* faq section */
 .faq_ .container {
-    width: 100%;
+    width: 80%;
     max-width: 60rem;
-    margin: 3rem auto 0;
+    margin-left:8rem;
 }
-
+@media (max-width: 600px){
+    .faq_ .container{
+        margin-left:3rem;
+    }
+}
 .faq {
     box-shadow: 0 2px 1px rgba(35, 35, 35, 0.3);
     transition: all 0.3s ease;
