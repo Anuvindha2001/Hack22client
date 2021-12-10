@@ -331,10 +331,23 @@ label {
 
 @media (max-width: 1400px) {
     .hero-container img {
-        width: 380px;
+        width: 340px;
     }
 }
-
+@media (min-width: 600px) {
+    h4 {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .hero-container h3 {
+        display: none;
+    }
+    .hero-container h4 {
+        margin-top: 12%;
+        color: white;
+    }
+}
 @media (min-width: 768px) {
     .hero-container img {
         width: 600px;
