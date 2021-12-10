@@ -21,6 +21,7 @@ html {
 hr {
     margin-inline: 10%;
 }
+
 h2 {
     text-align: center;
     font-weight: bold;
@@ -191,17 +192,6 @@ nav ul li a:hover {
     stroke: #542bab;
 }
 
-.text {
-    font-weight: bolder;
-    text-align: center;
-    color: #542bab;
-    font-family: 'Roboto Condensed';
-    font-size: 90px;
-    letter-spacing: 8px;
-    line-height: 32px;
-    position: relative;
-    top: -85px;
-}
 @media (max-width: 768px) {
     .text {
         font-size: 60px;
@@ -314,14 +304,13 @@ label {
 /* hero section */
 .hero {
     width: 100%;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg.png');
     background-color: #f1f0f6;
-    background-image: cover;
-    background-position: cover;
+
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
     /* height: 660px; */
     margin: 0px;
     padding: 0px;
@@ -356,7 +345,7 @@ label {
     font-family: 'Roboto Condensed';
     font-size: 90px;
     letter-spacing: 8px;
-    color: #542bab;
+    color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
@@ -522,7 +511,7 @@ timeline */
     position: relative;
     bottom: 0;
     width: 400px;
-
+    background-color: white;
     /* border-radius: 5px; */
     display: flex;
     align-items: center;
