@@ -306,10 +306,9 @@ label {
     width: 100%;
     background-image: url('../img/bg.png');
     background-color: #f1f0f6;
-
     background-repeat: no-repeat;
     /* background-size: cover; */
-    background-position: center;
+    position: center;
     /* background-attachment: fixed; */
     /* height: 660px; */
     margin: 0px;
