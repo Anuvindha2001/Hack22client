@@ -567,7 +567,7 @@ timeline */
 @media screen and (min-width: 900px) {
     .timeline ul li div div {
         box-shadow: 0px 4px 4px rgba(228, 59, 101, 0.25);
-        background: white;
+
         z-index: -1;
     }
     .timeline ul li:nth-of-type(odd) > div {
@@ -582,7 +582,7 @@ timeline */
 @media screen and (max-width: 900px) {
     .timeline ul li div div {
         box-shadow: 0px 4px 4px rgba(228, 59, 101, 0.25);
-        background: white;
+
         z-index: -1;
     }
     .timeline ul li {
@@ -616,10 +616,10 @@ timeline */
     }
 
     .timeline ul li {
-        margin-left: 20%;
+        margin-left: 6%;
     }
     .timeline ul li div div {
-        margin-left: 35%;
+        margin-left: 25%;
     }
 
     .timeline ul li:nth-of-type(even) > div {
@@ -678,7 +678,7 @@ timeline */
 }
 @media (max-width: 400px) {
     .cont {
-        margin-left: 5%;
+        margin-left: 12%;
     }
 }
 .prz {
@@ -947,13 +947,18 @@ section {
 
 /* faq section */
 .faq_ .container {
-    width: 80%;
-    max-width: 60rem;
-    margin-left:8rem;
+    width: 60rem;
 }
-@media (max-width: 600px){
-    .faq_ .container{
-        margin-left:3rem;
+@media (max-width: 900px) {
+    .faq_ .container {
+        margin-left: 3.6rem;
+        width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .faq_ .container {
+        width: 100%;
     }
 }
 .faq {
@@ -1470,4 +1475,3 @@ footer {
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
