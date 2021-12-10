@@ -1,21 +1,24 @@
+html,
+body {
+    overflow-x: hidden;
+}
 body {
     background-color: #f1f0f6;
     font-size: 16px;
     margin: 0;
     box-sizing: border-box;
 }
-.button
-{
+.button {
     background-color: #7e34a3;
-border: 1px solid #756969;
-box-sizing: border-box;
-border-radius: 3px;
-width: 7rem;
-margin-left: 75%;
+    border: 1px solid #756969;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 7rem;
+    margin-left: 75%;
 }
-.basic
-{
+.basic {
     margin-top: 5%;
+    margin-left: 6%;
     margin-bottom: 15%;
     display: flex;
     flex-direction: column;
@@ -68,7 +71,8 @@ h4 {
     flex-direction: column;
 }
 
-.name input, .last-name input {
+.name input,
+.last-name input {
     text-align: center;
 }
 
@@ -76,34 +80,31 @@ h4 {
     visibility: hidden;
 }
 
-input[type="radio"] {
+input[type='radio'] {
     -webkit-appearance: none;
     appearance: none;
     background: none;
     /* iOS fix */
-    background: #FFFFFF;
-    border: 1px solid #BBBBBB;
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
     box-sizing: border-box;
     height: 1.125rem;
     width: 1.125rem;
     border-radius: 50%;
     cursor: pointer;
 }
-.gender .radio-btns
-{
-    display:inline-block;
+.gender .radio-btns {
+    display: inline-block;
     justify-content: space-between;
 }
-.inst input{
+.inst input {
     background: rgba(241, 240, 247, 0.7);
 }
-.edu-div
-{
+.edu-div {
     display: inline-block;
-    width:50%;
+    width: 50%;
 }
-.edu
-{
+.edu {
     display: flex;
     justify-content: space-between;
 }
