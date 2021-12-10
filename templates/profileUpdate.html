@@ -35,8 +35,8 @@
         <div class="heading"> <h4>BASIC INFO</h4></div>
     <div class="container">
      
-       
-        <br>
+       <br> 
+
         <div class="col col-lg-5 col-md-5 col-sm-10 col-xs-10">
             <div class="name">
                 <p>Name:</p>
@@ -66,13 +66,16 @@
             </div>
             <br />
             <div class="gender">
-                <p>Gender</p>
-                <div class="radio-btns">
-                    <input type="radio">Male</input>
-                <input type="radio">Female</input>
-                <input type="radio">Non-binary</input>
-                <input type="radio">Prefer not to say</input>
-                </div>
+                
+                    <p>Gender:</p>
+                    <select type="text" placeholder="">
+                        <option value="nothing">Prefer Not to say</option>
+                        <option value="nothing">Male</option>
+                        <option value="nothing">Non Binary</option>
+                        <option value="nothing">Transgender</option>
+                        <option value="nothing">Female</option>
+                    </select>
+                
             </div>
             <br />
         </div>
@@ -81,15 +84,19 @@
         <div class="container">
 
             <div class="col col-lg-10 col-md-10 col-sm-10">
+                <div>
+                    <p>TEAM STATUS</p>
+                    <input type="text" ></input>
+                </div></br>
                 <div class="inst">
                     <p>INSTITUTION</p>
-                    <input type="text" placeholder="Nothing Selected"></input>
+                    <input type="text" ></input>
                 </div>
                 <br />
                 <div class="edu">
                     <div class="edu-div">
                         <p>CURRENT LEVEL OF STUDY</p>
-                        <input type="text" placeholder="Nothing Selected"></input>
+                        <input type="text" ></input>
                     </div>
                     <div class="edu-div">
                         <p>EXPECTED GRADUATION YEAR</p>
@@ -111,7 +118,7 @@
                 <div class="edu">
                     <div class="edu-div">
                         <p>STATE</p>
-                        <input type="text" placeholder="Nothing Selected"></input>
+                        <input type="text" ></input>
                     </div>
                     <div class="edu-div">
                         <p>PINCODE</p>
@@ -121,10 +128,24 @@
                 </div>
                 <br>
                 <div class="shipping">
+                    <p> Which of the following avengers do you relate the most?</p>
+                    <select>
+                        <option value="nothing">Nothing Selected</option>
+                        <option value="Hulk">Hulk</option>
+  <option value="Ironman">Iron man</option>
+  <option value="CaptonAmerica">Capton America</option>
+  <option value="BlackWidow">Black Widow</option>
+  <option value="SpiderMan">Spider Man</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="shipping">
                     <p>WEBSITE LINK</p>
                     <input type="text" placeholder="Link to your personal website"></input>
                 </div>
                 <br>
+               
                 <div class="shipping">
                     <p>GITHUB PROFILE LINK</p>
                     <input type="text" placeholder="Link to your github profile"></input>
@@ -153,7 +174,7 @@
         </div>
         <br>
         <div class="button">
-            <input type="button" value="Update Profile">
+            Update profile
         </div>
         </div>
 
